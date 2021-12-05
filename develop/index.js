@@ -4,10 +4,20 @@ const fs = require('fs')
 const generateMarkdown = require('./generateMarkdown')
 
 
-inquirer
-const questions= () => {
-    return inquirer.prompt([
-        {
+    console.log(`
+            ===============================================
+                     Your ReadMe starts now!
+                Plan ahead, your ReadMe should have a nice 
+                table of contents. Think of how you want the 
+             layout to look. We are going to add prompts for
+             1. Installation guide, 2. Usage guide, 3. Credits
+             for the project, 4. Licensing. Fill out the 
+             following to get started. 
+            ===============================================
+            `);
+
+const questions= [   
+            {
             type:'input',
             name:'name',
             message:'What is your name?',
@@ -43,25 +53,8 @@ const questions= () => {
                     console.log('The most important part of a ReadMe is to give it purpose!');
                 }
             }
-        }
-    ]);
-};
-//questions().then (answers => console.log(answers));
-
-const readmeInfo = () => {
-    console.log(`
-        ===============================================
-                 Your ReadMe starts now!
-        Plan ahead, your ReadMe should have a nice 
-        table of contents. Think of how you want the 
-        layout to look. We are going to add prompts for
-        1. Installation guide, 2. Usage guide, 3. Credits
-        for the project, 4. Licensing. Fill out the 
-        following to get started. 
-        ===============================================
-    `);
-    return inquirer.prompt([
-        {
+        },
+            {
             type: 'input',
             name: 'project name',
             message: 'What is your project name?',
@@ -135,12 +128,26 @@ const readmeInfo = () => {
                 }
             }
         }   
-    ]);
+    ];
+
+function writeToFile(fileName, data) {
+    return fs.writeFile(fileName, data, (err) => {
+        if (err) {
+            throw Error (err)
+        }
+    })
+}
+
+function init() {
+    inquirer.prompt (questions)
+     .then (answers => {
+         const markDown = generateMarkdown (answers)
+         writeToFile('readMe.md',markDown)
+     },
+     )
+     //.then (readmeInfo)
+     //.then (readmeInfo => console.log (readmeInfo));
+
 };
 
-
-questions()
-     .then (questions => console.log(questions))
-     .then (readmeInfo)
-     .then (readmeInfo => console.log (readmeInfo));
-
+init();
