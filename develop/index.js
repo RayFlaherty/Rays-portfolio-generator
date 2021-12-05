@@ -131,11 +131,12 @@ const questions= [
     ];
 
 function writeToFile(fileName, data) {
-    return fs.writeFile(fileName, data, (err) => {
-        if (err) {
-            throw Error (err)
-        }
-    })
+    //const pageHTML= generateMarkdown (fileName, data);
+        return fs.writeFile(fileName, data, err => {
+            if (err) {
+                throw Error (err)
+            }
+        })
 }
 
 function init() {
@@ -143,11 +144,8 @@ function init() {
      .then (answers => {
          const markDown = generateMarkdown (answers)
          writeToFile('readMe.md',markDown)
-     },
-     )
-     //.then (readmeInfo)
-     //.then (readmeInfo => console.log (readmeInfo));
-
-};
+     }
+     )   
+}
 
 init();

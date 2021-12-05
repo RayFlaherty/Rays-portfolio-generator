@@ -1,16 +1,29 @@
 
-    TABLE OF CONTENTS
-    [reason](#Purpose)
+    # TABLE OF CONTENTS
+    * [reason](#Purpose)
 
-    [install](#Installation-Requirements)
+    * [install](#Installation-Requirements)
 
-    [guide](#User-Guide)
+    * [guide](#User-Guide)
 
-    [credits](#Contributors)
+    * [credits](#Contributors)
 
-    [licensing](#Security-License)
+    * [licensing](#Security-License)
 
+ 
+    # Purpose 
+    ray
 
-    #Purpose 
-    undefined
+    # Installation-Requirements
+    ray
+
+    # User-Guide
+    ray
+
+    # Contributors
+    ray
+
+    # Security License
+    MIT
+
     
