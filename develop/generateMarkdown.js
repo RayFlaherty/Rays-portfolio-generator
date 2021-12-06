@@ -1,17 +1,32 @@
 
-
-//const renderPurpose = reason
-   // if (reasonInput === true) {
-     //   return `reasonInput`
-    //}else{
-      //  `I have no reason`
-   // }
-//}
+function License(licensing) {
+    console.log('license: ', licensing);
+    switch (licensing) {
+      case 'MIT':
+        return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+      
+      default:
+        return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+    }
+    
+}
 
 
 function generateMarkdown (data) {
     console.log ('data is ==>',data)
     return `
+        Creator
+    ===============    
+     ${data.name}
+    ===============
+
+       GitHub Link
+    =======================   
+    github./${data.github}
+    =======================
+
+
+
     # TABLE OF CONTENTS
     * [reason](#Purpose)\n
     * [install](#Installation-Requirements)\n
@@ -32,7 +47,7 @@ function generateMarkdown (data) {
     ${data.credits}
 
     # Security License
-    ${data.licensing}
+    ${License(data.licensing)}
 
     `;
 }
