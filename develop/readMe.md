@@ -1,4 +1,4 @@
-# Project Awesome!
+# Project AWESOME
   ## Created By
   Raymond Flaherty
   ## GitHub Link
@@ -10,13 +10,13 @@
   * [credits](#Contributors)
   * [licensing](#Security-License)
   # Purpose
-  to help generate a great readme!
+  to generate a readme
   # Installation-Requirements
-  node, inquirer
+  node.js. inquirer, other stuff
   # User-Guide
-  fix this line
+  CHANGE THIS STUGG
   # Contributors
   Ray Flaherty
   # Security License
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
   

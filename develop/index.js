@@ -84,7 +84,7 @@ const questions= [
         {
             type:'input',
             name:'guide',
-            message:'How do you use your project',
+            message:'Explain How you want to guide your user through your project.',
             validate: guideInput =>{
                 if (guideInput){
                     return true;
@@ -98,7 +98,7 @@ const questions= [
         {
             type:'input',
             name:'credits',
-            message:'Who is involved in the project',
+            message:'Who is involved in the project?',
             validate: creditsInput => {
                 if (creditsInput) {
                     return true;
@@ -109,13 +109,13 @@ const questions= [
             }
         },
         {
-            type:'checkbox',
+            type:'list',
             name:'licensing',
             message:'Security licensing',
-            choices: [ 'MIT', 'Boost Software License 1.0', 'Open Software License 3.0', 'GNU General Public License v3.0', 'Boost Software License 1.0' 
+            choices: [ 'MIT', 'Boost Software License 1.0', 'The Perl License', 'GNU General Public License v3.0', 'Mozilla Public License 2.0' 
             ],
-            validate: licensingCheckbox => {
-                if (licensingCheckbox) {
+            validate: licensing => {
+                if (licensing) {
                     return true;
                 }else{
                     console.log('It is very important to keep your project protected.');
