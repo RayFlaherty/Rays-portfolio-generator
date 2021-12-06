@@ -1,22 +1,22 @@
-# sadfsdf
+# Project Awesome!
   ## Created By
-  clear
+  Ray Flaherty
   ## GitHub Link
-  http://www.github.com/sdf;akds
+  http://www.github.com/RayFlaherty
   # TABLE OF CONTENTS
   * [Purpose](#Purpose)
-  * [install](#Installation Requirements)
-  * [guide](#User Guide)
+  * [install](#Installation-Requirements)
+  * [guide](#User-Guide)
   * [credits](#Contributors)
   * [licensing](#Security-License)
   # Purpose
-  asdfsdf
+  My read me is to help others generate professional readme files!
   # Installation Requirements
-  asdfasdf
+  NODE.JS, inquirer, VS code Editor
   # User Guide
-  asdfasdf
+  A lot of explainatin of how to use the readme and project
   # Contributors
-  asdfasdf
+  Ray Flaherty, Joseph
   # Security License
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  Mozilla Public License 2.0    [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
   
