@@ -112,12 +112,7 @@ const questions= [
             type:'checkbox',
             name:'licensing',
             message:'Security licensing',
-            choices: [
-                {name:'MIT'},
-                {name:'Microsoft Public License'},
-                {name:'Open Software License 3.0'},
-                {name:'GNU General Public License v3.0'},
-                {name:'Boost Software License 1.0'}
+            choices: [ 'MIT', 'Boost Software License 1.0', 'Open Software License 3.0', 'GNU General Public License v3.0', 'Boost Software License 1.0' 
             ],
             validate: licensingCheckbox => {
                 if (licensingCheckbox) {
