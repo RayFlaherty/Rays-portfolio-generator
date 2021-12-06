@@ -25,18 +25,18 @@ function generateMarkdown(data) {
   ## Created By
   ${data.name}
   ## GitHub Link
-  github./${data.github}
+  http://www.github.com/${data.github}
   # TABLE OF CONTENTS
-  * [reason](#Purpose)
-  * [install](#Installation-Requirements)
-  * [guide](#User-Guide)
+  * [Purpose](#Purpose)
+  * [install](#Installation Requirements)
+  * [guide](#User Guide)
   * [credits](#Contributors)
   * [licensing](#Security-License)
   # Purpose
   ${data.reason}
-  # Installation-Requirements
+  # Installation Requirements
   ${data.install}
-  # User-Guide
+  # User Guide
   ${data.guide}
   # Contributors
   ${data.credits}

@@ -1,22 +1,22 @@
-# Project AWESOME
+# sadfsdf
   ## Created By
-  Raymond Flaherty
+  clear
   ## GitHub Link
-  github./RayFlaherty
+  http://www.github.com/sdf;akds
   # TABLE OF CONTENTS
-  * [reason](#Purpose)
-  * [install](#Installation-Requirements)
-  * [guide](#User-Guide)
+  * [Purpose](#Purpose)
+  * [install](#Installation Requirements)
+  * [guide](#User Guide)
   * [credits](#Contributors)
   * [licensing](#Security-License)
   # Purpose
-  to generate a readme
-  # Installation-Requirements
-  node.js. inquirer, other stuff
-  # User-Guide
-  CHANGE THIS STUGG
+  asdfsdf
+  # Installation Requirements
+  asdfasdf
+  # User Guide
+  asdfasdf
   # Contributors
-  Ray Flaherty
+  asdfasdf
   # Security License
-  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
